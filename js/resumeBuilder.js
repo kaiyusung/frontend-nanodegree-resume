@@ -1,22 +1,3 @@
-var appendObjectProperties = function(object, location, formatter, propertyPlaceholder, valuePlaceholder) {
-  for (var property in object) {
-    var value = object[property];
-    var data = formatter.replace(propertyPlaceholder, property)
-                        .replace(valuePlaceholder, value);
-    $(location).append(data);
-  }
-};
-
-var appendListOfObjects = function(list, location, formatter, valuePlaceholder) {
-  for (var key in list) {
-    $(location).append(formatter.replace(valuePlaceholder, list[key]));
-  }
-};
-
-var replaceData = function(data, formatter, dataPlaceholder) {
-  dataPlaceholder = dataPlaceholder || '%data%';
-  return formatter.replace(dataPlaceholder, data);
-};
 
 
 
@@ -230,6 +211,6 @@ projects.display = function() {
 
 projects.display();
 
-$("#mapDiv").append(googleMap);
+$("#map-div").append(googleMap);
 
 
