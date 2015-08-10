@@ -226,10 +226,6 @@ function initializeMap() {
 
 }
 
-/*
-Uncomment the code below when you're ready to implement a Google Map!
-*/
-
 // Calls the initializeMap() function when the page loads
 window.addEventListener('load', initializeMap);
 

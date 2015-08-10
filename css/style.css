@@ -40,9 +40,9 @@ h2 {
 }
 
 h3 {
-  font-style: italic;
+  font-style: bold;
   font-size: 20px;
-  color: #000;
+  color: #999;
   line-height: 22px;
 }
 
@@ -105,11 +105,11 @@ a {
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #f3f3f3;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #0099FF;
 }
 
 .white-text {
@@ -152,7 +152,7 @@ ul {
 .biopic {
   float: left;
   padding: 10px;
-  width: 200px;
+  width: 170px;
   display: none;
 }
 
@@ -178,7 +178,7 @@ span {
 
 @media only screen and (max-width:900px) {
   .biopic {
-    width: 175px;
+    width: 170px;
   }
 }
 
@@ -187,7 +187,7 @@ span {
     margin-top: 10%;
   }
   .biopic {
-    width: 150px;
+    width: 145px;
   }
   .welcome-message {
     display: none;

@@ -11,14 +11,14 @@
 
 var bio = {
 	"name": "Edward Kaiyu Sung",
-	"role": "Marketing Analytics",
+	"role": "Marketing Analytics Manager",
 	"contacts": {
 	"mobile": "415-823-4583",
 	"email": "edward.kaiyu@gmail.com",
 	"github": "https://github.com/kaiyusung",
 	"location": "San Francisco, CA"
-     },
-	"picture": "images/fry.jpg",
+	},
+	"picture": "images/eddie.jpg",
 	"message": "Hello! Welcome to my online resume!",
 	"skills": ["Fixed Income Trading", "Analytics", "Python", "SQL"]
 };
@@ -54,25 +54,25 @@ for (i in formattedContactInfo) {
 
 var education = {
 	"schools":[
-		 {
-		  "name": "Columbia University",
-		  'location': 'New York, NY',
-		  "degree": "Mathematics"},
-		  {
-		  	"name":"Keio University",
-		  	"location":"Tokyo",
-		  	"degree":"Systems Engineering"
-		  }
-	  ],
+		{
+			"name": "Columbia University",
+			'location': 'New York, NY',
+			"degree": "Mathematics"},
+		{
+			"name":"Keio University",
+			"location":"Tokyo",
+			"degree":"Systems Engineering"
+		}
+	],
  	"onlineCourses": [
-		  {
-		  	"title": "JavaScript Syntax",
-		  	"school": "Udacity",
-		  	"dates": 2015,
-		  	"url": "http://www.udacity.com"
-		  }
-  	]
-  };
+		{
+			"title": "Front End Programming",
+			"school": "Udacity",
+			"dates": 2015,
+			"url": "http://www.udacity.com"
+		}
+	]
+};
 
 education.display = function() {
 	if(education.schools.length > 0 || education.onlineCourses.length > 0) {
@@ -108,19 +108,19 @@ education.display();
 var work = {
 	"jobs":[
 		{
-		"employer":"DeNA",
-		"title":"Marketing Analytics",
-		"location": "San Francisco"
+			"employer":"DeNA",
+			"title":"Analytics and User Acquisition",
+			"location": "San Francisco"
 		},
 		{
-		"employer":"Goldman Sachs",
-		"title":"USD Rates Trader",
-		"location": "Tokyo"
+			"employer":"Goldman Sachs",
+			"title":"USD Rates Trader",
+			"location": "Tokyo"
 		},
 		{
-		"employer":"Nomura Securities",
-		"title":"Yen Rates Trader",
-		"location": "Tokyo"
+			"employer":"Nomura Securities",
+			"title":"Yen Rates Trader",
+			"location": "Tokyo"
 		}
 	]
 };
@@ -172,12 +172,12 @@ function displayWork () {
 }
 
 function inName(name) {
-	name = name.trim().split(" ");
-	console.log(name);
-	name[1] = name[1].toUpperCase();
-	name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
+  name = name.trim().split(" ");
+  console.log(name);
+  name[1] = name[1].toUpperCase();
+  name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
 
-	return name[0]+" "+name[1];
+  return name[0]+" "+name[1];
 }
 
 $("#main").append(internationalizeButton);
