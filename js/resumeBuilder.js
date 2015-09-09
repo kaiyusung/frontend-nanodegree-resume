@@ -12,7 +12,7 @@ var bio = {
 	"skills": ["Fixed Income Trading", "Analytics", "Python", "SQL"]
 };
 
-function displayBio () {
+bio.display = function(){
 	var formattedName =  HTMLheaderName.replace("%data%", bio.name);
 	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 	var formattedBioPic = HTMLbioPic.replace("%data%", bio.picture);
@@ -34,13 +34,13 @@ function displayBio () {
 
 	if (bio.skills.length) {
 		$("#header").append(HTMLskillsStart);
-		for (i in bio.skills) {
+		for (var i = 0; i < bio.skills.length; i++) {
 			$("#skills").append(HTMLskills.replace("%data%", bio.skills[i]));
 		}
-	};
+	}
 };
 
-displayBio();
+bio.display();
 
 var education = {
 	"schools":[
